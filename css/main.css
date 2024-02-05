@@ -1,0 +1,23 @@
+h1 {
+  font-size: 60px;
+  text-align: center;
+  color: wheat;
+}
+
+.container-adaptive {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: red;
+  height: 500px;
+}
+
+.container-responsive {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: green;
+  height: 500px;
+}/*# sourceMappingURL=main.css.map */
