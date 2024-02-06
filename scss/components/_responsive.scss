@@ -1,51 +1,37 @@
 .container-responsive {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 15px;
   background-color: green;
   height: 500px;
+
+  @media screen and (max-width: 480px) {
+    max-width: 480px;
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    max-width: 1200px;
+  }
 }
 
-// __________________________
-// .container-responsive {
-//   max-width: 100%;
-//   margin: 0 auto;
-//   padding: 15px;
-//   background-color: green;
-//   height: 500px;
+.responsive-title {
+  text-align: center;
 
-//   @media screen and (max-width: 480px) {
-//     max-width: 480px;
-//   }
+  @media screen and (max-width: 480px) {
+      color: yellow;
+  }
 
-//   @media screen and (min-width: 481px) and (max-width: 768px) {
-//     max-width: 768px;
-//   }
+  @media screen and (min-width: 481px) and (max-width: 768px) {
+      color: blue;
+  }
 
-//   @media screen and (min-width: 769px) and (max-width: 1200px) {
-//     max-width: 1200px;
-//   }
-// }
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+      color: white;
+  }
+}
 
 
-
-// @media screen and (max-width: 480px) {
-//     .container-responsive {
-//         max-width: 480px;
-//     }
-//     .container-responsive > h1 {
-//         color: yellow;
-//     }
-// }
-
-// @media screen and (min-width: 481px) and (max-width: 768px) {
-//     .container-responsive > h1 {
-//         color: blue;
-//     }
-// }
-
-// @media screen and (min-width: 769px) and (max-width: 1200px) {
-//     .container-responsive > h1 {
-//         color: white;
-//     }
-// }
